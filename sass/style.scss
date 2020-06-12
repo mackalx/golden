@@ -1,21 +1,29 @@
 /* GLOBAL */
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+$font-logo: 'Muli', sans-serif;
+
 $font-decor: 'Merriweather', serif;
 
-$font-regular: 'Muli', sans-serif;
+$font-text: 'Muli', sans-serif;
 
-$background-light: #eff2f5;
+$color-body: #FFFFFF;
 
-$background-dark: #c7c7c7;
+$color-text: #0000001e;
+
+$color-decor: #f0e00a;
 
 body {
   font-size: 1rem;
   line-height: 1.7;
-  font-family: $font-regular;
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
+  font-family: $font-text;
+  margin: 0;
+  background-color: $color-body;
+  font-family: $font-text;
+  color: $color-text;
 }
 
 /* NAVIGATION */
