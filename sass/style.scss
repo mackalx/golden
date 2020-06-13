@@ -1,9 +1,5 @@
 /* GLOBAL */
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 $font-logo: 'Muli', sans-serif;
 
 $font-decor: 'Merriweather', serif;
@@ -28,11 +24,27 @@ body {
 
 /* NAVIGATION */
 
+
+
 /* SPLASH */
 
 /* SERVICES */
 
 /* PORTFOLIO */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: $color-body;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+
+
 
 /* FOOTER */
 

@@ -1,8 +1,4 @@
 /* GLOBAL */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 body {
   font-size: 1rem;
   line-height: 1.7;
@@ -17,6 +13,19 @@ body {
 /* SPLASH */
 /* SERVICES */
 /* PORTFOLIO */
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  min-width: 0;
+  background-color: #FFFFFF;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0.25rem;
+}
+
 /* FOOTER */
 /* MEDIA */
 /*# sourceMappingURL=style.css.map */
