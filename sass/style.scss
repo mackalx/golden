@@ -1,34 +1,116 @@
 /* GLOBAL */
 
-$font-logo: 'Muli', sans-serif;
+$font-logo: 'Romanesco', cursive;
 
-$font-decor: 'Merriweather', serif;
+$font-decor: 'Noto Serif', serif;
 
-$font-text: 'Muli', sans-serif;
+$font-text: 'Palanquin', sans-serif;
 
 $color-body: #FFFFFF;
 
-$color-text: #0000001e;
+$color-text: #000000;
 
 $color-decor: #f0e00a;
 
+$color-overlay: rgb(90, 90, 90);
+
+$transition: all 1s;
+
 body {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.7;
   font-family: $font-text;
+  color: $color-text;
+  text-align: center;
   margin: 0;
   background-color: $color-body;
-  font-family: $font-text;
-  color: $color-text;
 }
 
-/* NAVIGATION */
+h1 {
+  font-family: $font-logo;
+  font-size: 32px;
+  color: $color-decor;
+}
 
+h2, h3 {
+  color: $color-body;
+}
 
+h3, h5 {
+  font-family: $font-decor;
+}
+
+h2, h4, p {
+  font-family: $font-text;
+}
+
+.section-title {
+  h4 {
+    font-weight: 800;
+  }
+  h5 {
+    font-weight: 100;
+  }
+}
 
 /* SPLASH */
 
+.overlay {
+  /* z-index: 1;
+  height: 100vh;
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+  background: $color-overlay;
+  opacity: 0.2; */
+  .splash {
+    position: relative;
+    background-color: $color-overlay;
+    background-blend-mode: multiply;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(/images/background.jpg);
+    .container {
+      position: absolute;
+      min-width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      .menu {
+        ul {
+          list-style-type: none;
+          text-align: left;
+          position: relative;
+          width: 100%;
+          li {
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            font-family: $font-text;
+            font-weight: 800;
+            color: $color-body;
+            a {
+              text-decoration: none;
+              color: $color-body;
+              margin-right: 20px;
+            }  
+          }
+        }
+      }
+    }  
+    .splash-inner {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+  }
+}
+
 /* SERVICES */
+
+
 
 /* PORTFOLIO */
 
@@ -40,13 +122,35 @@ body {
   background-color: $color-body;
   background-clip: border-box;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 
-
-
-
 /* FOOTER */
+
+footer {
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      display: flex;     
+      height: 60px;
+      width: 60px;
+      background-color: $color-text;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      margin: 48px 15px;
+      transition: $transition;
+      &:hover {
+        transform: scale(1.2);
+      }
+      i {
+        color: $color-body;
+        font-size: 28px;
+      } 
+    }
+  }
+}
 
 /* MEDIA */
 
