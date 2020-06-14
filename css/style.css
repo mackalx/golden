@@ -9,14 +9,12 @@ body {
   background-color: #FFFFFF;
 }
 
-h1 {
-  font-family: "Romanesco", cursive;
-  font-size: 32px;
-  color: #f0e00a;
-}
-
 h2, h3 {
   color: #FFFFFF;
+}
+
+h3 {
+  font-size: 48px;
 }
 
 h3, h5 {
@@ -27,26 +25,42 @@ h2, h4, p {
   font-family: "Palanquin", sans-serif;
 }
 
+.section-title {
+  margin-bottom: 40px;
+}
+
 .section-title h4 {
-  font-weight: 800;
+  font-weight: bold;
+  font-family: "Palanquin", sans-serif;
+  font-size: 36px;
+  margin-top: 120px;
+  margin-bottom: 20px;
 }
 
 .section-title h5 {
-  font-weight: 100;
+  font-weight: lighter;
+  font-family: "Noto Serif", serif;
+  margin-bottom: 80px;
 }
 
 /* SPLASH */
-.overlay {
-  /* z-index: 1;
-  height: 100vh;
-  overflow: auto;
-  top: 0px;
-  left: 0px;
-  background: $color-overlay;
-  opacity: 0.2; */
+h1 {
+  font-family: "Romanesco", cursive;
+  font-size: 38px;
+  color: #ffee00;
+  margin-top: 20px;
+  margin-right: 56px;
 }
 
-.overlay .splash {
+h2 {
+  font-family: "Palanquin", sans-serif;
+  font-size: 80px;
+  margin-top: 30px;
+  font-weight: bolder;
+  letter-spacing: 10px;
+}
+
+.splash {
   position: relative;
   background-color: #5a5a5a;
   background-blend-mode: multiply;
@@ -57,45 +71,73 @@ h2, h4, p {
   background-image: url(/images/background.jpg);
 }
 
-.overlay .splash .container {
+.splash .container {
   position: absolute;
   min-width: 100%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.overlay .splash .container .menu ul {
+.splash .container .menu ul {
   list-style-type: none;
   text-align: left;
-  position: relative;
   width: 100%;
+  margin-top: 40px;
 }
 
-.overlay .splash .container .menu ul li {
+.splash .container .menu ul li {
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Palanquin", sans-serif;
-  font-weight: 800;
+  font-weight: bolder;
   color: #FFFFFF;
 }
 
-.overlay .splash .container .menu ul li a {
+.splash .container .menu ul li a {
   text-decoration: none;
   color: #FFFFFF;
-  margin-right: 20px;
+  margin-right: 32px;
 }
 
-.overlay .splash .splash-inner {
+.splash .splash-inner {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
 }
 
+.splash .splash-inner .btn {
+  color: #FFFFFF;
+  font-family: "Palanquin", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  background: #ffee00;
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+  height: 70px;
+}
+
 /* SERVICES */
+.services i {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid #ffee00;
+  font-size: 32px;
+  line-height: 60px;
+  color: #ffee00;
+}
+
+.services h6 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 /* PORTFOLIO */
-.card {
+.portfolio .card {
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -106,28 +148,66 @@ h2, h4, p {
   background-clip: border-box;
   border: none;
   border-radius: 4px;
+  /* .card-img {
+      height: 300px;
+      width: 300px;
+      img {
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    } */
+}
+
+.portfolio .card .card-text {
+  padding-bottom: 60px;
+}
+
+.portfolio h5 {
+  margin-top: 10px;
+  font-weight: lighter;
+  font-family: "Noto Serif", serif;
+}
+
+.portfolio h6 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.portfolio .col {
+  padding-top: 45px;
 }
 
 /* FOOTER */
+footer {
+  padding-top: 80px;
+}
+
 footer ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  padding: 0;
 }
 
 footer ul li {
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
-  width: 60px;
+  height: 38px;
+  width: 38px;
   background-color: #000000;
   border-radius: 50%;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  margin: 48px 15px;
+  margin: 0 15px;
   transition: all 1s;
 }
 
@@ -137,8 +217,24 @@ footer ul li:hover {
 
 footer ul li i {
   color: #FFFFFF;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 /* MEDIA */
+@media (max-width: 541px) {
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+    width: auto;
+    height: auto;
+  }
+  .menu ul li {
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
