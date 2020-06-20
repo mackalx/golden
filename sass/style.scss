@@ -2,9 +2,11 @@
 
 $font-logo: 'Romanesco', cursive;
 
-$font-decor: 'Noto Serif', serif;
+$font-decor: 'Libre Baskerville', serif;
 
-$font-text: 'Palanquin', sans-serif;
+$font-description: 'Roboto Slab', serif;
+
+$font-text: 'Montserrat', sans-serif;
 
 $color-body: #FFFFFF;
 
@@ -12,7 +14,7 @@ $color-text: #000000;
 
 $color-decor: #ffee00;
 
-$color-overlay: rgb(90, 90, 90);
+$color-background: #f7f7f7;
 
 $transition: all 1s;
 
@@ -78,8 +80,6 @@ h2 {
 
 .splash {
   position: relative;
-  background-color: $color-overlay;
-  background-blend-mode: multiply;
   height: 100vh;
   background-position: center center;
   background-size: cover;
@@ -131,6 +131,17 @@ h2 {
   }
 }
 
+.splash::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-text;
+  opacity: 0.5;
+}
+
 /* SERVICES */
 
 .services {
@@ -154,30 +165,26 @@ h2 {
 /* PORTFOLIO */
 
 .portfolio {
+  background-color: $color-background;
   .card {
     position: relative;
     display: flex;
     flex-direction: column;
     min-width: 0;
-    background-color: $color-body;
+    background-color: $color-background;
     background-clip: border-box;
-    border: none;
-    border-radius: 4px;
+    margin: 0 auto;
     .card-text {
-      padding-bottom: 60px;
+      background-color: $color-body;
     }
-    /* .card-img {
+    .card-img {
       height: 300px;
-      width: 300px;
       img {
-        width:100%;
-        height:100%;
-        object-fit: cover;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+      vertical-align: bottom;
+      height: 100%;
+      object-fit: cover;
       }
-    } */
+    }
   }
   h5 {
     margin-top: 10px;
