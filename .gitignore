@@ -117,3 +117,6 @@ dist
 
 # excercise-source local files
 excercise-source/
+
+# generated css file
+css/style.css

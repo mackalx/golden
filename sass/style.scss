@@ -10,9 +10,11 @@ $font-text: 'Montserrat', sans-serif;
 
 $color-body: #FFFFFF;
 
-$color-text: #000000;
+$color-text: #222222;
 
-$color-decor: #ffee00;
+$color-text-lighter: #777777;
+
+$color-decor: #fed136;
 
 $color-background: #f7f7f7;
 
@@ -33,7 +35,8 @@ h2, h3 {
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 40px;
+  letter-spacing: -1px;
 }
 
 h3, h5 {
@@ -45,19 +48,29 @@ h2, h4, p {
 }
 
 .section-title {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   h4 {
     font-weight: bold;
     font-family: $font-text;
-    font-size: 36px;
+    font-size: 40px;
     margin-top: 120px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    color: $color-text;
+    letter-spacing: -1px;
   }
   h5 {
     font-weight: lighter;
     font-family: $font-decor;
+    margin-top: 0;
     margin-bottom: 80px;
+    color: $color-text-lighter;
+    font-size: 16px;
   }
+}
+
+[class^="col"] {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* SPLASH */
@@ -68,14 +81,16 @@ h1 {
   color: $color-decor;
   margin-top: 20px;
   margin-right: 56px;
+  letter-spacing: 5px;
 }
 
 h2 {
   font-family: $font-text;
-  font-size: 80px;
-  margin-top: 30px;
+  font-size: 75px;
+  margin-top: 22px;
+  margin-bottom: 59px;
   font-weight: bolder;
-  letter-spacing: 10px;
+  letter-spacing: -1.88px;
 }
 
 .splash {
@@ -99,14 +114,15 @@ h2 {
         li {
           text-decoration: none;
           display: inline-block;
-          font-size: 16px;
+          font-size: 15px;
+          font-weight:bold;
           font-family: $font-text;
-          font-weight: bolder;
           color: $color-body;
+          line-height: 41px;
           a {
             text-decoration: none;
             color: $color-body;
-            margin-right: 32px;
+            margin-right: 40px;
           }
         }
       }
@@ -124,9 +140,14 @@ h2 {
       font-weight: bolder;
       background: $color-decor;
       border: none;
-      border-radius: 10px;
-      width: 250px;
-      height: 70px;
+      border-radius: 4px;
+      width: 240px;
+      height: 65px;
+    }
+    h3 {
+      font-weight: lighter;
+      letter-spacing: 1px;
+      margin-bottom: 0;
     }
   }
 }
@@ -146,10 +167,10 @@ h2 {
 
 .services {
   i {
-    width: 65px;
-    height: 65px;
+    width: 67px;
+    height: 67px;
     border-radius: 50%;
-    border: 2px solid $color-decor;
+    border: 3px solid $color-decor;
     font-size: 32px;
     line-height: 60px;
     color: $color-decor;
@@ -157,7 +178,15 @@ h2 {
   h6 {
     font-family: $font-text;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 27px;
+    margin-bottom: 18px;
+  }
+  p {
+    font-family: $font-description;
+    color: $color-text-lighter;
+    font-size: 14px;
+    margin: 0 28px 120px 28px;
   }
 }
 
@@ -167,35 +196,35 @@ h2 {
 .portfolio {
   background-color: $color-background;
   .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
     background-color: $color-background;
-    background-clip: border-box;
-    margin: 0 auto;
-    .card-text {
-      background-color: $color-body;
-    }
     .card-img {
       height: 300px;
+      margin: 0 44px;
       img {
       vertical-align: bottom;
       height: 100%;
-      object-fit: cover;
       }
     }
-  }
-  h5 {
-    margin-top: 10px;
-    font-weight: lighter;
-    font-family: $font-decor;
-  }
-  h6 {
-    font-family: $font-text;
-    font-weight: bold;
-    font-size: 18px;
-    margin: 0 auto;
+    .card-text {
+      background-color: $color-body;
+      padding-top: 29px;
+      padding-bottom: 27px;
+    }
+    h5 {
+      margin: 2px 0 0 0;
+      font-weight: lighter;
+      font-family: $font-decor;
+      color: #737373;
+      font-size: 14px;
+    }
+    h6 {
+      font-family: $font-text;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0;
+      color: #333333;
+      font-size: 18px;
+    }
   }
   .col {
     padding-top: 45px;
@@ -207,7 +236,11 @@ h2 {
 /* FOOTER */
 
 footer {
-  padding-top: 80px;
+  padding-top: 54px;
+  .footer-text {
+    font-size: 14px;
+    margin-top: 22px;
+  }
   ul {
     display: flex;
     justify-content: center;

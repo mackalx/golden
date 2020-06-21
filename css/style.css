@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   font-family: "Montserrat", sans-serif;
-  color: #000000;
+  color: #222222;
   text-align: center;
   margin: 0;
   background-color: #FFFFFF;
@@ -14,7 +14,8 @@ h2, h3 {
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 40px;
+  letter-spacing: -1px;
 }
 
 h3, h5 {
@@ -26,38 +27,50 @@ h2, h4, p {
 }
 
 .section-title {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .section-title h4 {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  font-size: 36px;
+  font-size: 40px;
   margin-top: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  color: #222222;
+  letter-spacing: -1px;
 }
 
 .section-title h5 {
   font-weight: lighter;
   font-family: "Libre Baskerville", serif;
+  margin-top: 0;
   margin-bottom: 80px;
+  color: #777777;
+  font-size: 16px;
+}
+
+[class^="col"] {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* SPLASH */
 h1 {
   font-family: "Romanesco", cursive;
   font-size: 38px;
-  color: #ffee00;
+  color: #fed136;
   margin-top: 20px;
   margin-right: 56px;
+  letter-spacing: 5px;
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 80px;
-  margin-top: 30px;
+  font-size: 75px;
+  margin-top: 22px;
+  margin-bottom: 59px;
   font-weight: bolder;
-  letter-spacing: 10px;
+  letter-spacing: -1.88px;
 }
 
 .splash {
@@ -86,16 +99,17 @@ h2 {
 .splash .container .menu ul li {
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
   color: #FFFFFF;
+  line-height: 41px;
 }
 
 .splash .container .menu ul li a {
   text-decoration: none;
   color: #FFFFFF;
-  margin-right: 32px;
+  margin-right: 40px;
 }
 
 .splash .splash-inner {
@@ -110,11 +124,17 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: bolder;
-  background: #ffee00;
+  background: #fed136;
   border: none;
-  border-radius: 10px;
-  width: 250px;
-  height: 70px;
+  border-radius: 4px;
+  width: 240px;
+  height: 65px;
+}
+
+.splash .splash-inner h3 {
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0;
 }
 
 .splash::before {
@@ -124,25 +144,34 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #222222;
   opacity: 0.5;
 }
 
 /* SERVICES */
 .services i {
-  width: 65px;
-  height: 65px;
+  width: 67px;
+  height: 67px;
   border-radius: 50%;
-  border: 2px solid #ffee00;
+  border: 3px solid #fed136;
   font-size: 32px;
   line-height: 60px;
-  color: #ffee00;
+  color: #fed136;
 }
 
 .services h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  margin-top: 27px;
+  margin-bottom: 18px;
+}
+
+.services p {
+  font-family: "Roboto Slab", serif;
+  color: #777777;
+  font-size: 14px;
+  margin: 0 28px 120px 28px;
 }
 
 /* PORTFOLIO */
@@ -151,42 +180,40 @@ h2 {
 }
 
 .portfolio .card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  min-width: 0;
   background-color: #f7f7f7;
-  background-clip: border-box;
-  margin: 0 auto;
-}
-
-.portfolio .card .card-text {
-  background-color: #FFFFFF;
 }
 
 .portfolio .card .card-img {
   height: 300px;
+  margin: 0 44px;
 }
 
 .portfolio .card .card-img img {
   vertical-align: bottom;
   height: 100%;
-  object-fit: cover;
 }
 
-.portfolio h5 {
-  margin-top: 10px;
+.portfolio .card .card-text {
+  background-color: #FFFFFF;
+  padding-top: 29px;
+  padding-bottom: 27px;
+}
+
+.portfolio .card h5 {
+  margin: 2px 0 0 0;
   font-weight: lighter;
   font-family: "Libre Baskerville", serif;
+  color: #737373;
+  font-size: 14px;
 }
 
-.portfolio h6 {
+.portfolio .card h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 18px;
-  margin: 0 auto;
+  margin: 0;
+  color: #333333;
+  font-size: 18px;
 }
 
 .portfolio .col {
@@ -195,7 +222,12 @@ h2 {
 
 /* FOOTER */
 footer {
-  padding-top: 80px;
+  padding-top: 54px;
+}
+
+footer .footer-text {
+  font-size: 14px;
+  margin-top: 22px;
 }
 
 footer ul {
@@ -211,7 +243,7 @@ footer ul li {
   display: flex;
   height: 38px;
   width: 38px;
-  background-color: #000000;
+  background-color: #222222;
   border-radius: 50%;
   -ms-flex-pack: center;
       justify-content: center;
