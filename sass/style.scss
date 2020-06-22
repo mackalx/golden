@@ -197,9 +197,11 @@ h2 {
   background-color: $color-background;
   .card {
     background-color: $color-background;
+    width: 291.94px;
+    margin: 0 44px 50px 44px;
     .card-img {
       height: 300px;
-      margin: 0 44px;
+      overflow: hidden;
       img {
       vertical-align: bottom;
       height: 100%;
@@ -209,22 +211,21 @@ h2 {
       background-color: $color-body;
       padding-top: 29px;
       padding-bottom: 27px;
-    }
-    h5 {
-      margin: 2px 0 0 0;
-      font-weight: lighter;
-      font-family: $font-decor;
-      color: #737373;
-      font-size: 14px;
-    }
-    h6 {
-      font-family: $font-text;
-      font-weight: bold;
-      font-size: 18px;
-      margin: 0;
-      color: #333333;
-      font-size: 18px;
-    }
+      h5 {
+        margin: 2px 0 0 0;
+        font-weight: lighter;
+        font-family: $font-decor;
+        color: #737373;
+        font-size: 14px;
+      }
+      h6 {
+        font-family: $font-text;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0;
+        color: #333333;
+      }
+    }  
   }
   .col {
     padding-top: 45px;
