@@ -99,7 +99,7 @@ h2 {
 .splash .container .menu ul li {
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
@@ -109,7 +109,7 @@ h2 {
 .splash .container .menu ul li a {
   text-decoration: none;
   color: #FFFFFF;
-  margin-right: 40px;
+  margin: 0 40px 20px 0;
 }
 
 .splash .splash-inner {
@@ -181,18 +181,16 @@ h2 {
 
 .portfolio .card {
   background-color: #f7f7f7;
-  width: 291.94px;
   margin: 0 44px 50px 44px;
 }
 
 .portfolio .card .card-img {
-  height: 300px;
   overflow: hidden;
 }
 
 .portfolio .card .card-img img {
   vertical-align: bottom;
-  height: 100%;
+  width: 100%;
 }
 
 .portfolio .card .card-text {
@@ -250,7 +248,8 @@ footer ul li {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  margin: 0 15px;
+  margin: 0 10px;
+  line-height: 5px;
   transition: all 1s;
 }
 
@@ -275,9 +274,6 @@ footer ul li i {
     font-size: 16px;
     width: auto;
     height: auto;
-  }
-  .menu ul li {
-    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
